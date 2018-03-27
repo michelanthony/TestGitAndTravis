@@ -16,4 +16,4 @@ script:
   
 after_success:
   - ./run.exe > logfile.log
-  - echo logfile.log
+  - cat logfile.log
