@@ -12,7 +12,7 @@ os:
 script: 
   - echo $PATH
   - echo $HOME
-  - gcc -o run.exe hello.cpp 
+  - g++ -o run.exe hello.cpp 
   
 after_success:
   - ./run.exe > logfile.log
