@@ -1,5 +1,5 @@
 print("Hello world!")
-import * from math;
+from math import *
 x= 3;
 y =cos(x);
 print(y);
