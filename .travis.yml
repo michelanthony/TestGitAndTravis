@@ -17,7 +17,11 @@ script:
 after_success:
   - ./run.exe > logfile.log
   - cat logfile.log
+  - echo "Email Added"
   
-notifications:
+nnotifications:
   email:
-    - anthony.michel@free.fr
+    recipients:
+      - anthony.michel@free.fr
+    on_success: always # default: change
+    on_failure: always # default: always
