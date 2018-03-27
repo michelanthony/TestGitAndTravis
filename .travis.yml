@@ -1,9 +1,19 @@
-language: python
+#language: python
+language: cpp
 
-python:
-
-  - "3.5"
-
+language: cpp
+sudo: required
+dist: trusty
+compiler:
+- gcc
+os:
+- linux
+  
 script: 
-
-  - python hello.py
+  - echo $PATH
+  - echo $HOME
+  - gcc -o run.exe hello.cpp 
+  
+after_success:
+  - ./run.exe > logfile.log
+  - echo logfile.log
