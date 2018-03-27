@@ -17,3 +17,7 @@ script:
 after_success:
   - ./run.exe > logfile.log
   - cat logfile.log
+  
+notifications:
+  email:
+    - anthony.michel@free.fr
