@@ -7,4 +7,6 @@ int main()
     double x = 5; 
     double y = std::cos(x);
     std::cout << y << std::endl;
+	
+	return 0;
 }
