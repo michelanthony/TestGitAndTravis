@@ -2,11 +2,10 @@
 
 language: cpp
 sudo: required
-dist: trusty
 compiler:
 - gcc
 os:
-- linux
+- osx
   
 script: 
   - echo $PATH
